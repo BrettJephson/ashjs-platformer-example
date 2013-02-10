@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Ash for javascript</title>
+    </head>
+    <body>
+        <div id="game_wrapper" class="game_wrapper">
+            <!-- game writes dom elements into this wrapper -->
+        </div>
+    </body>
+    <script src="lib/ash/ash.require.js"></script>
+
+    <script src="lib/brejep/keypoll.js"></script>
+    <script src="lib/brejep/tickprovider.js"></script>
+    <script src="lib/brejep/rectangle.js"></script>
+    <script src="src/game/platformer.js"></script>
+    <script src="src/game/entitycreator.js"></script>
+
+    <script src="src/game/systems/collisionsystem.js"></script>
+    <script src="src/game/systems/gamemanager.js"></script>
+    <script src="src/game/systems/motioncontrolsystem.js"></script>
+    <script src="src/game/systems/movementsystem.js"></script>
+    <script src="src/game/systems/jumpsystem.js"></script>
+    <script src="src/game/systems/rendersystem.js"></script>
+    <script src="src/game/systems/systempriorities.js"></script>
+
+    <script src="src/game/nodes/motioncontrol.js"></script>
+    <script src="src/game/nodes/movement.js"></script>
+    <script src="src/game/nodes/jump.js"></script>
+    <script src="src/game/nodes/playercollision.js"></script>
+    <script src="src/game/nodes/platformcollision.js"></script>
+    <script src="src/game/nodes/render.js"></script>
+
+    <script src="src/game/graphics/playerview.js"></script>
+    <script src="src/game/graphics/platformview.js"></script>
+
+    <script src="src/game/behaviour/path.js"></script>
+
+    <script src="src/game/components/display.js"></script>
+    <script src="src/game/components/gamestate.js"></script>
+    <script src="src/game/components/motion.js"></script>
+    <script src="src/game/components/jumpmotion.js"></script>
+    <script src="src/game/components/motionpattern.js"></script>
+    <script src="src/game/components/motioncontrols.js"></script>
+    <script src="src/game/components/player.js"></script>
+    <script src="src/game/components/platform.js"></script>
+    <script src="src/game/components/position.js"></script>
+    <script src="src/game/components/bounds.js"></script>
+
+    <script src="src/platformer-game.js"></script>
+    <script>
+        require('platformer-game').initialise();
+    </script>
+</html>
